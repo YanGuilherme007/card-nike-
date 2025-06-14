@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card de Produto Físico</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="bg-slate-100 flex items-center justify-center
+min-h-screen p-4" >
+
+    <div class="group w-full max-w-xs bg-white rounded-2xl shadow-lg
+    overflow-hidden transform transition-all duration-300  hover: shadow-2xl" >
+        <div class="relative">
+            <img class="w-full h-56 object-cover" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop" alt="Tênis de corrida moderno">
+            <div class="absolute top-0 right-0 m-3 flex flex-col gap-2 opacity-0 group-hover:opacity-100
+             duration-300">
+                <button class="bg-white/70 rounded-full p-2
+                backdrop-blur-sm hover:bg-white transition-colors z[99] ">
+                   <i class="ph ph-heart text-xl
+                   text-slate-700"></i>
+                </button>
+                <button class="bg-white/70 rounded-full p-2
+                backdrop-blur-sm hover:bg-white transition-colors z[99]">
+                   <i class="ph ph-eyes text-xl
+                   text-slate-700"></i>
+                </button>
+            </div>
+             <div class=" z-99 absolute top-0 w-full left-0 p-4 gradient bg-gradient-to-b 
+             from-black/50 to-transparent z[1]">
+                <span class="bg-sky-500 text-white text-xs font-bold
+             px-2 py-1 rounded">LANÇAMENTO</span>
+            </div>
+        </div>
+        <div class="p-5">
+            <p class="text-sm text-slate-500 mb-1">Calçados</p>
+            <h3 class="text-xl text-slate-800 font-bold mb-2 truncate">Velocity RunPro 2</h3>
+            <div class="flex justify-between items-center ">
+                <p class="text-2xl font-semibold text-slate-900">R$ 699,90</p>
+                 <div class="flex items-center text-amber-400">
+                    <i class="ph ph-star ph-fill"></i>
+                    <span class=" text-sm text-slate-600 font-medium ml-1">4.8</span>
+                </div>
+            </div>
+            <div>
+                <p class="text-sm font-medium text-slate-600 mb-2">Cores disponíveis:</p>
+                <div class="flex gap-2 mb-4 ">
+                    <span class="w-6 h-6 rounded-full bg-blue-500 border-2 border-white shadow
+                    ring-blue-500"></span>
+                    <span class="w-6 h-6 rounded-full bg-red-500 border-2 border-slate-300 ring-2
+                    ring-blue-500"></span>
+                    <span class="w-6 h-6 rounded-full bg-black border-2 border-white shadow
+                   "></span>
+                </div>
+            </div>
+            <button class="w-full flex items-center justify-center gap-2
+            bg-slate-900 text-white font-bold py-3 px-4 rounded-lg *
+            hover:bg-slate-700 transition-colors durations-300">
+                <i class="ph ph-shopping-cart text-xl"></i>
+                Adicionar ao Carrinho
+            </button>
+        </div>
+    </div>
+
+</body>
+</html>
